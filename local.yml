@@ -1,0 +1,19 @@
+---
+- hosts: local
+  gather_facts: no 
+  become: true
+
+  #  vars_files:
+  #         - vars/password.yml
+
+  tasks:
+
+          #  - include_tasks: tasks/create_ansible_user.yml
+          #  - include_tasks: tasks/update_ansadm_password.yml
+          # - include_tasks: tasks/change_hostname.yml
+           # include_tasks: tasks/apt_update.yml
+            #- include_tasks: tasks/software_uninstall.yml
+            - include_tasks: tasks/software_install.yml
+              #- include_tasks: tasks/login_script.yml
+            #- include_tasks: tasks/set_timezone.yml
+            #- include_tasks: tasks/install_docker.yml

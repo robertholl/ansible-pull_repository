@@ -1,0 +1,11 @@
+    - name: Install Unzip
+      apt: name=unzip state=latest update_cache=true
+
+    - name: Install Git
+      apt: name=git state=latest update_cache=true
+
+    - name: Install vim
+      apt: name=vim state=latest update_cache=true
+
+      #- name: Install Terminator
+      #apt: name=terminator state=present update_cache=true
