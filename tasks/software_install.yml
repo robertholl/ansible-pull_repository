@@ -9,3 +9,6 @@
 
     - name: Install Terminator
       apt: name=terminator state=latest update_cache=true
+
+    - name: Install Hugo site builder
+      apt: name=hugo state=latest update_cache=true
