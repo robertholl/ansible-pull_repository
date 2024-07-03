@@ -12,3 +12,6 @@
 
     - name: Install Hugo site builder
       apt: name=hugo state=latest update_cache=true
+
+    - name: Install wget
+      apt: name=wget state=latest update_cache=true
